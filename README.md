@@ -1,3 +1,6 @@
+
+# LiveChartsWinFormVb
+
 # 概要
 LiveChartsグラフライブラリを使用したVisual Basic.NET Windows Formのサンプルプログラムです。  
 画像ファイルを読み込み、RGBのヒストグラムを表示しています。
