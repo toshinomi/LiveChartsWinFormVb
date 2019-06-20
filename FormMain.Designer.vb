@@ -66,7 +66,7 @@ Partial Class FormMain
         Me.Controls.Add(Me.image)
         Me.Controls.Add(Me.btnFileSelect)
         Me.Name = "FormMain"
-        Me.Text = "Form1"
+        Me.Text = "FormMain"
         CType(Me.image, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
