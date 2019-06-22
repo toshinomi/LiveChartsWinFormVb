@@ -65,6 +65,7 @@ Partial Class FormMain
         Me.Controls.Add(Me.chart)
         Me.Controls.Add(Me.image)
         Me.Controls.Add(Me.btnFileSelect)
+        Me.MaximizeBox = False
         Me.Name = "FormMain"
         Me.Text = "FormMain"
         CType(Me.image, System.ComponentModel.ISupportInitialize).EndInit()

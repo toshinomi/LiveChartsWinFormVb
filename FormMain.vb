@@ -5,7 +5,7 @@ Imports System.Runtime.InteropServices.Marshal
 
 Public Class FormMain
 
-    Private m_nHistgram(256) As Integer
+    Private m_nHistgram(255) As Integer
 
     Public Sub New()
 
@@ -39,7 +39,7 @@ Public Class FormMain
             .Title = "Histgram"
         }
 
-        For nIdx As Integer = 0 To 256
+        For nIdx As Integer = 0 To m_nHistgram.Length - 1
             lineSeriesChart.Values.Add(0)
         Next nIdx
         chart.Series.Clear()
@@ -59,7 +59,7 @@ Public Class FormMain
             .Title = "Histgram"
         }
 
-        For nIdx As Integer = 0 To 256
+        For nIdx As Integer = 0 To m_nHistgram.Length - 1
             lineSeriesChart.Values.Add(m_nHistgram(nIdx))
         Next nIdx
         chart.Series.Clear()
@@ -95,7 +95,7 @@ Public Class FormMain
     End Sub
 
     Public Sub InitHistgram()
-        For nIdx As Integer = 0 To 256
+        For nIdx As Integer = 0 To m_nHistgram.Length - 1
             m_nHistgram(nIdx) = 0
         Next nIdx
     End Sub
