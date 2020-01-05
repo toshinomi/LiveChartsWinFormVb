@@ -26,7 +26,7 @@ Public Class FormMain
     ''' </summary>
     ''' <param name="sender">オブジェクト</param>
     ''' <param name="e">ルーティングイベントのデータ</param>
-    Private Sub BtnFileSelect_Click(sender As Object, e As EventArgs) Handles btnFileSelect.Click
+    Private Sub OnClickBtnFileSelect(sender As Object, e As EventArgs) Handles btnFileSelect.Click
         Dim openFileDlg As ComOpenFileDialog = New ComOpenFileDialog()
         openFileDlg.Filter = "JPG|*.jpg|PNG|*.png"
         openFileDlg.Title = "Open the file"
